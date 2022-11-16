@@ -7,6 +7,7 @@
   <li>используется препроцессор <a href="https://sass-lang.com/" rel="nofollow">SCSS</a></li>
   <li>используется <a href="https://webpack.js.org/" rel="nofollow">Webpack</a> для сборки JavaScript-модулей</li>
   <li>используется <a href="https://babeljs.io" rel="nofollow">babel</a></li>
+  <li>уже подключен <a href="https://necolas.github.io/normalize.css/" rel="nofollow">Normalize.css</a></li>
   <li>автоматический рендер страницы при сохранении данных</li>
 </ul>
 

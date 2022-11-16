@@ -6,6 +6,7 @@
 <ul dir="auto">
   <li>используется препроцессор <a href="https://sass-lang.com/" rel="nofollow">SCSS</a></li>
   <li>используется <a href="https://webpack.js.org/" rel="nofollow">Webpack</a> для сборки JavaScript-модулей</li>
+  <li>используется <a href="https://babeljs.io" rel="nofollow">babel</a></li>
   <li>автоматический рендер страницы при сохранении данных</li>
 </ul>
 
@@ -48,14 +49,14 @@
 <pre class="notranslate"><code>gulp-scss-starter
 ├── dist
 ├── gulp
-│&nbsp;&nbsp;├── config
-│&nbsp;&nbsp;├── tasks
+│&nbsp; &nbsp; ├── config
+│&nbsp; &nbsp; ├── tasks
 ├── src
-│&nbsp;&nbsp; ├── files
-│&nbsp;&nbsp; ├── html
-│&nbsp;&nbsp; ├── img
-│&nbsp;&nbsp; ├── js
-│&nbsp;&nbsp; ├── scss
+│&nbsp; &nbsp; ├── files
+│&nbsp; &nbsp; ├── html
+│&nbsp; &nbsp; ├── img
+│&nbsp; &nbsp; ├── js
+│&nbsp; &nbsp; ├── scss
 ├── index.html
 ├── webpack.config.js
 ├── package.json
@@ -68,24 +69,28 @@
 <ul dir="auto">
   <li>Корень папки:
   <ul dir="auto">
-    <li><code>index.html</code> — индексная страница приложения</li>
-    <li><code>webpack.config.js</code> — настройки Webpack</li>
-    <li><code>package.json</code> — список зависимостей</li>
-    <li><code>.jshintrc</code> — настройки jshint</li> 
-    <li><code>.gitignore</code> – запрет на отслеживание файлов Git'ом</li>
-    <li><code>gulpfile.js</code> — входящая точка gul</li>
-    <li><code>json-server-db.json</code> – локальная база json-server</li>
+
+  <li><code>index.html</code> — индексная страница приложения</li>
+  <li><code>webpack.config.js</code> — настройки Webpack</li>
+  <li><code>package.json</code> — список зависимостей</li>
+  <li><code>.jshintrc</code> — настройки jshint</li> 
+  <li><code>.gitignore</code> – запрет на отслеживание файлов Git'ом</li>
+  <li><code>gulpfile.js</code> — входящая точка gul</li>
+  <li><code>json-server-db.json</code> – локальная база json-server</li>
+
   </ul>
 
   </li>
   
   <li>Папка <code>src</code> - используется во время разработки:
   <ul dir="auto">
-    <li>файлы<code>src/files</code></li>
-    <li>html компоненты: <code>src/html</code></li>
-    <li>изображения: <code>src/img</code></li>
-    <li>JS-файлы: <code>src/js</code></li>
-    <li>SCSS-файлы: <code>src/scss</code></li>
+
+  <li>файлы<code>src/files</code></li>
+  <li>html компоненты: <code>src/html</code></li>
+  <li>изображения: <code>src/img</code></li>
+  <li>JS-файлы: <code>src/js</code></li>
+  <li>SCSS-файлы: <code>src/scss</code></li>
+
   </ul>
 
   </li>
@@ -120,7 +125,9 @@
   <li>изображения автоматически оптимизируются без потери качества</li>
   <li>изображения автоматически конвертируются в формат <code>.webp</code></li>
   <li>С помощью скрипта <code>src/js/modules/gulpScripts.js</code> идет проверка поддержки браузера <code>.webp</code> формата и в зависимости
+
     от результата добавляет в разметку необходимый формат изображения</li>
+
   </ul>
 </li>
 </ul>

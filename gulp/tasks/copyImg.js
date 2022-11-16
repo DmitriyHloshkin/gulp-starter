@@ -11,8 +11,8 @@ export const copyImg = () => {
   return gulp.src(path.src.images, {sourcemaps: true})
     .pipe(plumber(
       notify.onError({
-        title:"IMG",
-        message: "Error: <%= error.message %>",
+        title:'IMG',
+        message: 'Error: <%= error.message %>',
       })))
     .pipe(newer(path.build.images))
     .pipe(gulWebp())

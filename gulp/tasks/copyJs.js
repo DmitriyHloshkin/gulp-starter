@@ -7,13 +7,14 @@ export const copyJs = () => {
 				plumber = plugins.plumber,
         browserSync = plugins.browserSync,
         webpack = plugins.webpackStream,
-        ifPlugin = plugins.ifPlugin;
+        ifPlugin = plugins.ifPlugin,
+        babel = plugins.babel;
 
   return gulp.src(path.src.js, {sourcemaps: true})
     .pipe(plumber(
       notify.onError({
-        title:"JS",
-        message: "Error: <%= error.message %>",
+        title:'JS',
+        message: 'Error: <%= error.message %>',
       })))
     .pipe(webpack(webpackConfig(isDev)))
     .pipe(gulp.dest(path.build.js))

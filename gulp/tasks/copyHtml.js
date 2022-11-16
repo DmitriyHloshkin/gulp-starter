@@ -12,8 +12,8 @@ export const copyHtml = () => {
   return gulp.src(path.src.html, {sourcemaps: true})
     .pipe(plumber(
       notify.onError({
-        title:"HTML",
-        message: "Error: <%= error.message %>",
+        title:'HTML',
+        message: 'Error: <%= error.message %>',
       })))
     .pipe(fileinclude())
     .pipe(webpHtml())

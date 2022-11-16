@@ -1,5 +1,5 @@
-import del from "del";
-import fileinclude from "gulp-file-include";
+import del from 'del';
+import fileinclude from 'gulp-file-include';
 import webpHtml from 'gulp-webp-html-nosvg';
 import plumber from 'gulp-plumber';
 import notify from 'gulp-notify';

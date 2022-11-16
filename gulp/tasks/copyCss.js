@@ -35,7 +35,7 @@ export const copyScss = () => {
     .pipe(autoprefixer({
       cascade: true,
       grid: true,
-      overrideBrowsersList: ["last 10 versions"],
+      overrideBrowsersList: ['last 2 versions'],
     }))
     .pipe(ifPlugin(isBuild,cleanCss({ compatibility: 'ie8' })))
     .pipe(gulp.dest(path.build.scss))

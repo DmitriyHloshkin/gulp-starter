@@ -19,6 +19,7 @@ import { serverRun, serverClose } from './gulp/tasks/runServer.js';
 import { copyScss } from './gulp/tasks/copyCss.js';
 import { copyJs } from './gulp/tasks/copyJs.js';
 import { copyImg } from './gulp/tasks/copyImg.js';
+import { copyFonts } from './gulp/tasks/copyFonts.js';
 
 // Собираем наблюдатели
 function watcher() {
@@ -27,11 +28,12 @@ function watcher() {
     gulp.watch(path.watch.scss, copyScss);
     gulp.watch(path.watch.js, copyJs);
     gulp.watch(path.watch.images, copyImg);
+    gulp.watch(path.watch.images, copyFonts);
     
 }
 
 // Собираем паралельно выполняеме задачи
-const mainTasks = gulp.parallel(copyFiles, copyHtml, copyScss, copyJs, copyImg);
+const mainTasks = gulp.parallel(copyFiles, copyHtml, copyScss, copyJs, copyImg, copyFonts);
 
 // Режим gulp
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, serverRun), serverClose);

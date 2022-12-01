@@ -12,6 +12,7 @@ export const path = {
     scss:  `${buildFolder}/css/`,
     js:    `${buildFolder}/js/`,
     images:`${buildFolder}/img/`,
+    fonts: `${buildFolder}/fonts/`,
   },
 
   src: {
@@ -21,6 +22,7 @@ export const path = {
     js:    `${srcFolder}/js/*.js`,
     images:`${srcFolder}/img/**/*.{jpg, jpeg, gif, png, webp}`,
     svg:   `${srcFolder}/img/**/*.svg`,
+    fonts: `${srcFolder}/fonts/**/*.*`,
   },
 
   watch: {
@@ -29,6 +31,7 @@ export const path = {
     scss:  `${srcFolder}/+(sass|scss)/**/*.+(scss|sass|css)`,
     js:    `${srcFolder}/js/**/*.js`,
     images:`${srcFolder}/img/**/*.{jpg, jpeg, gif, png, ico, svg, webp}`,
+    fonts: `${srcFolder}/fonts/**/*.*`,
   },
 
   clean: buildFolder,

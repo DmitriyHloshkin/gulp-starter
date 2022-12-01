@@ -54,6 +54,7 @@
 │&nbsp; &nbsp; ├── tasks
 ├── src
 │&nbsp; &nbsp; ├── files
+│&nbsp; &nbsp; ├── fonts
 │&nbsp; &nbsp; ├── html
 │&nbsp; &nbsp; ├── img
 │&nbsp; &nbsp; ├── js
@@ -87,6 +88,7 @@
   <ul dir="auto">
 
   <li>файлы<code>src/files</code></li>
+  <li>шрифты<code>src/fonts</code></li>
   <li>html компоненты: <code>src/html</code></li>
   <li>изображения: <code>src/img</code></li>
   <li>JS-файлы: <code>src/js</code></li>

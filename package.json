@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/DmitriyHloshkin/gulp_project_template#readme",
   "browserslist": [
-    "> 1%"
+    "> 1%",
+    "not dead"
   ],
   "devDependencies": {
     "@babel/cli": "^7.19.3",

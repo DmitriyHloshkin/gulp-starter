@@ -28,7 +28,7 @@ function watcher() {
     gulp.watch(path.watch.scss, copyScss);
     gulp.watch(path.watch.js, copyJs);
     gulp.watch(path.watch.images, copyImg);
-    gulp.watch(path.watch.images, copyFonts);
+    gulp.watch(path.watch.fonts, copyFonts);
     
 }
 
